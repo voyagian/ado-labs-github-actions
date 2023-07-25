@@ -6,7 +6,6 @@ env:
   TF_LOG: INFO
 
 jobs:
-
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
@@ -25,7 +24,7 @@ jobs:
 
     # Install the preferred version of Terraform CLI 
     - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v1
+      uses: hashicorp/setup-terraform@v2
       with:
         terraform_version: 1.0.10
 
