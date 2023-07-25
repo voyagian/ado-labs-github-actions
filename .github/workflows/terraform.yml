@@ -6,6 +6,11 @@ env:
   TF_LOG: INFO
 
 jobs:
+  permissions:
+    actions: read
+    contents: read
+    security-events: write
+    
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
